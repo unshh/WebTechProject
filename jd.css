@@ -1,0 +1,565 @@
+body{
+	margin:0;
+		font-family: 'Open Sans', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	scroll-behavior: smooth;
+
+}
+.home{
+	min-height: 100vh;
+	background-image:url("images/1.jpg");
+	background-size: cover;
+	background-position: center;
+min-width: 470px;
+margin:0;
+}
+
+.portfolio-images:hover{
+    filter: grayscale(90%);
+	transition: 0.4s ease-in-out;
+	transform: scale(1.06);
+ 
+}
+
+header{
+
+	position: absolute;
+	left:0px;
+	right:0px;
+	border-bottom: 1px solid #423940;
+	z-index: 10;
+}
+
+header .brand-name a{
+	text-decoration: none;
+	font-size: 24px;
+color:white;
+	font-weight: 800;
+	text-transform: uppercase;
+	position: relative;
+
+
+}
+
+
+
+
+
+
+
+.container{
+	max-width: 1140px;
+	
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+
+header .row{
+	align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul {
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 40px;
+
+}
+
+header .navbar ul li a{
+	font-size:16;
+	text-decoration:none;
+	line-height: 70px;
+	color:#ffffff;
+	font-weight: 600;
+	position: relative;
+	display: block;
+}
+
+header .navbar ul li a.active::before{
+	content: '';
+	height: 3px;
+	background-color: #ffffff;
+	width:120%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+
+	
+
+}
+
+
+
+.spa1:before{
+	content: '';
+	animation: animate infinite 6s;
+	}
+
+
+@keyframes animate{
+	0%{
+		content:'Content Creator';
+	}
+
+	25%{
+		content:'Graphic Designer';
+	}
+
+	50%{
+		content:'Instafluencer';
+	}
+
+	75%{
+		content:'Ilustrator';
+	}
+100%{
+		content:'Freelancer';
+	}
+
+	
+} 
+
+.home .row{
+
+	min-height: 100vh;
+}
+.home .home-content{
+	
+	flex:0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.home .home-content .block{
+	
+	flex:0 0 75%;
+	max-width: 75%;
+	padding-left: 35px;
+	border-left: 5px solid #ffffff;
+	margin-bottom: 0px;
+
+}
+
+
+.home .home-content .block h6{
+	color: white;
+	font-size: 20px;
+	font-weight: 500px;
+	margin:0;
+	padding:0;
+	line-height: 1.2;
+}
+
+.home .home-content .block h1{
+	color: white;
+		font-size: 60px;
+	font-weight: 700px;
+	margin:0 ;
+	padding: 0;
+	line-height: 1.2;
+}
+
+.home .home-content .block h3{
+	 background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,206,7,1) 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-size: 30px;
+	line-height: 1.2;
+
+}
+
+.home .home-content .block .buttoon a{
+	border:4px;
+	color:#ffffff;
+	border:1px solid #ffffff;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 12px 25px;
+}
+
+.home .home-content .block .buttoon {
+	padding-top: 20px;
+}
+
+.home .home-content .block .buttoon a:hover{
+	background-color: white;
+	color:black;
+	transition:0.3s ease-in-out;
+}
+
+
+
+
+
+.middle{
+	position: absolute;
+	margin: -50px 0px 0px 180px;
+
+
+
+}
+
+
+.mouse{
+	width: 30px;
+	height:60px;
+	border:3px solid white;
+	border-radius: 60px;
+}
+
+
+
+.mouse:before{
+	content:'';
+	width:20px;
+	height:20px;
+	position: absolute;
+	left:5px;
+	top:10px;
+	background:grey;
+	border-radius: 50%;
+	opacity:1;
+	animation: mouse infinite 2s;
+}
+
+@keyframes mouse{
+	from{
+		opacity:1;
+		top:5px;
+
+	}
+
+	to{
+		opacity:0;
+		top: 50px
+	}
+}
+
+/* here Header section ends */
+
+
+
+
+
+@media (max-width:500px){
+	.aboutme .row h3{
+padding: 30px;
+	width:100%;
+	float: left;
+	font-size: 20px;
+	z-index: 1;
+	text-transform: capitalize;
+} }
+
+
+.allport{
+	width:80%;
+	margin:auto;
+	padding-top:50px; 
+	justify-content: center;
+	display: block;
+
+
+}
+
+
+
+
+
+
+.portfo h4{
+	line-height: 30px;
+	display: inline-block;
+	border-bottom: 3px solid black;
+	font-size: 25px; 
+	margin-left:152px; 
+}
+
+
+
+
+
+
+
+
+.allport img {
+	padding:10px 10px;
+
+}
+
+.aboutme .container .row h3 .spanss{
+color:blue;
+text-transform: none;
+
+}
+/*about*/
+.about-me{
+	padding: 100px 25px;
+}
+
+.about-me .section-title{
+	
+
+}
+.about-me .section-title h1{
+
+	display: inline-block;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.section-title h1{
+	border-bottom: 3px solid black;
+}
+.about-me .about-content{
+width:100%;
+	padding: 50px 30px;
+}
+
+.about-content .row{
+	min-width:350px;
+}
+
+
+.about-me .about-content .img img{
+	width: 100%;
+	
+}
+
+.about-me .about-content .img{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+
+}
+
+.about-me .about-content .text {
+
+	max-width: 66.66%;
+	flex:0 0 66.66%;
+	
+	padding-left: 20px;
+}
+
+
+
+
+
+@media (max-width: 800px){
+	ul{
+		display: none;
+	}
+	.checkbtn{
+	font-size:20px;
+	color:white;
+	float:right;
+	margin-top: 3px;
+	padding-right: 4px;
+	
+display: block;
+}
+
+
+	header .navbar ul li a{
+	font-size:14px;
+	text-decoration:none;
+	line-height: 50px;
+	color:#ffffff;
+	font-weight: 600;
+	position: relative;
+	display: block;
+
+}
+
+
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 30px;
+
+}
+
+
+
+
+}
+}
+
+
+@media (max-width: 650px){
+	header .navbar .brand-name {
+	
+padding-top: 5px;
+padding-left:20px; 
+
+}
+
+section .container .row .home-content .block h1 {
+font-size: 35px;
+
+}
+
+section .container .row .home-content .block h3 {
+	font-size: 20px;
+
+
+}
+
+section .container .row .home-content .block h3 .spa1 {
+	font-size: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fas fa-bars{
+	color:white;
+}
+
+.checkbtn{
+	font-size:20px;
+	color:white;
+	float:right;
+	
+	margin-top: 5px;
+	
+
+
+
+
+}
+
+
+#check{
+	display: none;
+	
+}
+
+@media (max-width:673px){
+.about-me .about-content .text {
+
+	max-width: 66.66%;
+	flex:0 0 66.66%;
+	font-size: 10px;
+	padding-left: 20px;
+}
+
+}
+
+
+
+.about-me .about-content .texts {
+
+	max-width: 66.66%;
+	flex:0 0 66.66%;
+	
+	padding-left: 20px;
+}
+}
+
+button{
+	background-color: #142850 ;
+	color: white;
+	margin-top: 20px;
+	border: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.contact-btn a{
+ text-decoration: none;
+ color: white;
+ font-size: 20px;
+
+
+
+
+}
+
+
+.text1, .text2, .img11, .img12, .img13{
+	opacity:0;
+}
+
+.text1.animated, .imgjd.animated, .img11.animated, .img12.animated,.text2.animated, .img13.animated{
+	opacity:1;
+}
+
+#check{
+	display: none;
+}
+
+
+@media (max-width:376px)
+{
+header .navbar ul li a{
+	font-size:11px;
+	text-decoration:none;
+	line-height: 40px;
+	color:#ffffff;
+	font-weight: 600;
+	position: relative;
+	display: block;
+}
+
+
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 15px;
+
+}}
+
+@media (max-width:410px)
+{
+header .navbar ul li a{
+	font-size:11px;
+	text-decoration:none;
+	line-height: 40px;
+	color:#ffffff;
+	font-weight: 600;
+	position: relative;
+	display: block;
+}
+
+
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 15px;
+
+}}
+
+
+.heading-info{
+	justify-content: center;
+	display: flex;
+}
+
